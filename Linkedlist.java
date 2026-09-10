@@ -60,6 +60,26 @@ class LinkedList {
         System.out.println("null");
     }
 
+    public void reverseIteate(){
+        if (head==null || head.next==null){
+            return;
+        }
+
+        Node prevNode = head;
+        Node currNode = head.next;
+        while(currNode!= null){
+            Node nextNode = currNode.next;
+            currNode.next = prevNode;
+
+            //update values
+            prevNode= currNode;
+            currNode=nextNode;
+
+        }
+        head.next = null;
+        head = prevNode;
+    }
+
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
 
@@ -75,5 +95,8 @@ class LinkedList {
 
         System.out.println("After deleting 20:");
         list.display();
+
+        System.out.println("After reversal");
+        list.reverseIteate();
     }
 }
