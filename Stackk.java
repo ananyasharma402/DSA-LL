@@ -1,4 +1,4 @@
-public class Stack {
+public class Stackk {
 
     static class Node {
         int data;
