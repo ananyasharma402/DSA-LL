@@ -13,4 +13,4 @@ public class Stackclass {
             s.pop();
         }
     }
-}
+} 
