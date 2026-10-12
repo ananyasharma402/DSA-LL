@@ -1,5 +1,4 @@
-
-    
+   
 public class HeightTree {
 
     static class Node {
