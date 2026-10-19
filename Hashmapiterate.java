@@ -1,5 +1,6 @@
     import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class Hashmapiterate {
 
@@ -17,6 +18,22 @@ public class Hashmapiterate {
             System.out.println("Key: " + entry.getKey()
                     + ", Value: " + entry.getValue());
         }
+
+
+
+
+
+
+        // Get all keys in a Set
+        Set<Integer> keys = map.keySet();
+
+        // Iterate through keys
+        for (Integer key : keys) {
+            System.out.println("Key: " + key
+                    + ", Value: " + map.get(key));
+                }
+
+
     }
 }
 
